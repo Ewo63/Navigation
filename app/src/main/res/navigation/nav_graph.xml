@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSatu">
+
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.ewosusanto.jetpack63.FragmentSatu"
+        android:label="fragment_fragment_satu"
+        tools:layout="@layout/fragment_fragment_satu" >
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.ewosusanto.jetpack63.FragmentDua"
+        android:label="fragment_fragment_dua"
+        tools:layout="@layout/fragment_fragment_dua" >
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTiga"
+            app:destination="@id/fragmentTiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.ewosusanto.jetpack63.FragmentTiga"
+        android:label="fragment_fragment_tiga"
+        tools:layout="@layout/fragment_fragment_tiga" />
+</navigation>
